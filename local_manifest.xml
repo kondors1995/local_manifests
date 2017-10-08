@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <remote name = "bb"
+          revision = "master"
+          fetch = "https://bitbucket.org/" />
+
+  <project name="Adesh15/aex_device_xiaomi_mido" path="device/xiaomi/mido" remote="github" revision="7.x" />
+  <project name="AospExtended-Devices/android_kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="github" revision="cm-14.1" />
+  <project name="AospExtended-Devices/vendor_xiaomi_mido" path="vendor/xiaomi/mido" remote="github" revision="cm-14.1" />
+
+  <!-- UBER Toolchains -->
+  <remove-project name="platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="matthewdalex/aarch64-linux-android-4.9" remote="bb" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="matthewdalex/arm-linux-androideabi-4.9" remote="bb" />
+</manifest>
